@@ -54,16 +54,20 @@ header > p {
     height: 40px;
     background-color: #be201f;
     text-align: center;
-    color: #fff;
     line-height: 40px;
     font-size: 14px;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .menu {
     width: 100%;
     display: flex;
     height: 100px;
-    line-height: 100px;
+
     justify-content:space-between;
     margin: 0 80px;
     z-index: 100;
@@ -71,6 +75,7 @@ header > p {
 
 .menu > ul {
     display: flex;
+    margin-top: 50px;
 }
 
 .menu > ul > li {
@@ -84,21 +89,32 @@ header > p {
     font-weight: 700;
 }
 
-.menu > ul > li > a:hover {
+.menu > ul > li > a::after{
+    content: '';
+    margin-top: 10px;
+    width: 0%;
+    height: 2px;
     display: block;
-    height: 70px;
-    border-bottom: solid 2px #be201f;
+    background-color: #be201f;
+    transition: 0.5s;
+}
+
+.menu > ul > li:hover a::after{
+    width: 100%;
+
 }
 
 .logo_box {
     transform: scale(0.7);
     margin-top: 25px;
-    margin-right: 380px;
+    margin-right: 360px;
+
 }
 
 .icon_box {
     width: 200px;
-    margin-right: 120px;    
+    margin-right: 120px;   
+    margin-top: 50px; 
 }
 
 .icon_box > ul {
@@ -113,7 +129,7 @@ header > p {
 /* 메인섹션 */
 
 .main_visual {
-    height: 820px;
+    height: 100vh;
     background: url(../img/main.png) no-repeat center center;
     background-size: cover;
     position: relative;
@@ -149,23 +165,23 @@ header > p {
     padding: 0 20px;
 }
 
-.shake_Sales_box > figure {
+.shake_Sales_box > a > figure {
     width: 540px;
     height: 600px;
     background-size: cover;
     margin-bottom: 20px;
 }
 
-.shake_Sales_box:nth-child(1) > figure {
+.shake_Sales_box:nth-child(1) > a > figure {
     background-image: url(../img/sec01_1.jpg);
 }
 
-.shake_Sales_box:nth-child(2) > figure {
+.shake_Sales_box:nth-child(2) a > figure {
     background-image: url(../img/sec01_2.jpg);
 }
 
 
-.shake_Sales_box:nth-child(3) > figure {
+.shake_Sales_box:nth-child(3) a > figure {
     background-image: url(../img/sec01_3.jpg);
 }
 
