@@ -214,6 +214,13 @@ header > p > a {
     margin: 20px 0;
 }
 
+.text_move > p:hover{
+    /* animation-duration: 60s;
+     */
+     animation-play-state: paused;
+     color: #d67979;
+}
+
 .text_move > p {
     font-size: 170px;
     color: #be201f;
@@ -291,11 +298,21 @@ header > p > a {
     font-weight: 600;
     font-size: 20px;
     border-radius: 50px;
+
+}
+
+.text_box > button > a {
     color: #be201f;
+    text-decoration: none;
 }
 
 .text_box > button:hover{
     background-color: #be201f;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.text_box > button:hover > a{
     color: #fff;
     transition: 0.3s;
 }
@@ -362,6 +379,9 @@ header > p > a {
     background-size: cover;
     text-align: center;
     position: relative;
+    /* gap : 34px
+    컨텐츠들의 간격을 일정하게 줌
+    */
 }
 
 .Happier_Diet_text_box {
@@ -383,7 +403,6 @@ header > p > a {
 .Happier_Diet_text_box > button {
     margin-top: 60px;
     background-color: transparent;
-    color: #fff;
     border: solid 1px #fff;
     width: 160px;
     height: 50px;
@@ -392,9 +411,20 @@ header > p > a {
     border-radius: 100px;
 }
 
+.Happier_Diet_text_box > button > a {
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+}
+
 .Happier_Diet_text_box > button:hover{
     background-color: #fff;
     border: none;
+    color: #be201f;
+    transition: 0.3s;
+}
+
+.Happier_Diet_text_box > button:hover > a{
     color: #be201f;
     transition: 0.3s;
 }
